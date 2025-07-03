@@ -2,12 +2,13 @@ import os
 import json
 import requests
 from datetime import datetime
-from app import app
-from flask import render_template, redirect, url_for, request, send_from_directory
+from flask import Flask, render_template, redirect, url_for, request, send_from_directory
 import pandas as pd
 import numpy as np
 from bs4 import BeautifulSoup
 from config import headers
+
+app = Flask(__name__)
 
 def list_to_html(l):
     return "<ul>"+"".join([f"<li>{e}</li>" for e in l])+"</ul>" if l else ""
@@ -204,3 +205,4 @@ def charts(product_id):
     with open(product_path, "r", encoding="utf-8") as f:
         product_data = json.load(f)
     return render_template("charts.html", product=product_data)
+
