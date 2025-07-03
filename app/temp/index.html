@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block title %}
+Strona Główna
+{% endblock %}
+{% block content %}
+<ul class="project-description">
+  <nav>
+    <ul class="navigation">
+      <li><a href="{{ url_for('index') }}">Glówna</a></li>
+      <li><a href="{{ url_for('display_form') }}">Ekstrakcja opnii</a></li>
+      <li><a href="{{ url_for('products') }}">Produkty</a></li>
+      <li><a href="{{ url_for('author') }}">O autorze</a></li>
+    </ul>
+  </nav>
+  <li>
+    <div>
+      <h3>Cel aplikacji</h3>
+      <p>
+        Aplikacja została  zrobiona w celu zdobycia oraz sprawdzenia wiedzy zdobytej
+        na zajęciach projektowych z programowania w języku Python oraz przedmiotu
+        zaawansowane technologie webowe. Celem aplikacji było praktyczne zastosowanie
+        poznanych umiejętności do stworzenia aplikacji webowej.
+      </p>
+    </div>
+
+    <div>
+      <h3>Opis działania aplikacji</h3>
+      <p>
+        Aplikacja umożliwia użytkownikom pobieranie opinii o produkcie z
+        Ceneo.pl, pobieranie plików z opiniami w formatach CSV, JSON, XLSX.
+        Użytkownik może wprowadzić adres URL produktu z Ceneo.pl, a aplikacja
+        pobierze i wyświetli opinie o tym produkcie.
+      </p>
+    </div>
+  </li>
+
+  <li>
+    <div>
+      <h3>Zastosowane biblioteki</h3>
+      <p>
+        W projekcie wykorzystano m.in. biblioteki takie jak Flask,
+        BeautifulSoup, numpy, pandas, requests.
+      </p>
+    </div>
+    <div>
+      <h3>Zastosowane podejścia</h3>
+      <p>
+
+      </p>
+    </div>
+  </li>
+</ul>
+{% endblock %}
+
+<head>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>

@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block title %}
+O Autorze
+{% endblock %}
+{% block content %}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="style.css">
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-12 d-flex align-items-center">
+            <div class="me-4">
+            </div>
+            <p class="lead text-dark">
+                <strong>Kacper Szwajnos</strong> || student Informatyki Ekonomicznej na ANS w Nowym Targu
+            </p>
+        </div>
+    </div>
+    <nav>
+        <ul class="navigation">
+          <li><a href="{{ url_for('index') }}">Glówna</a></li>
+          <li><a href="{{ url_for('display_form') }}">Ekstrakcja opnii</a></li>
+          <li><a href="{{ url_for('products') }}">Produkty</a></li>
+          <li><a href="{{ url_for('author') }}">O autorze</a></li>
+        </ul>
+      </nav>
+    <br>
+    <div class="row my-4">
+        <div class="col-md-12">
+            <h2 class="h3 text-dark">Doświadczenie</h2>
+            <p class="text-dark">, Uczestniczyłem w wielu projektach związanych z programowaniem, w tym:</p>
+            <ul class="text-dark">
+                <li><strong>CeneoWebScraper</strong> – zrobiłem aplikację webową która pomaga przy sprzedaży, zakupie oraz analizy na stornie ceneo.pl. Projekt ten obejmował tworzenie interfejsu użytkownika przy użyciu Bootstrapa oraz backendu w Pythonie, wykorzystując Flask i bazę danych SQLite.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row my-4">
+        <div class="col-md-12">
+            <h2 class="h3 text-dark">Udział w konkursach i hackathonach</h2>
+            <p class="text-dark">W ciągu ostatnich lat brałem również udział w różnych turniejach i konkursach:</p>
+            <ul class="text-dark">
+                <li><strong>Konkurs "Hack&Heal"</strong> – międzyplanetarny turniej kodowania, w którym uczestnicy tworzą algorytmy sterujące symulowanymi flotami kosmicznymi.</li>
+                <li><strong>Konkurs "Programista Roku"</strong> – Udział w konkursie organizowanym przez jedną z firm IT, który polegał na konkurs na stworzenie aplikacji, która wykorzystuje AI do poprawy zdrowia psychicznego użytkowników.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row my-4">
+        <div class="col-md-12">
+            <h2 class="h3 text-dark">Moje zainteresowania</h2>
+            <p class="text-dark">Poza programowaniem interesuje mnie budowa komputerów oraz ich podzespołów.</p>
+            <p class="text-dark">Jako pasjonat nowoczesnych technologii, staram się śledzić najnowsze wiadomości i trendy w branży IT i ekonomii rynkowej, aby nieustannie być na bierząco oraz śledzić różne giełdy.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
