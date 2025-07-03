@@ -4,14 +4,6 @@ Lista Produktów
 {% endblock %}
 {% block content %}
 <div class="container mt-4">
-  <nav>
-    <ul class="navigation">
-      <li><a href="{{ url_for('index') }}">Glówna</a></li>
-      <li><a href="{{ url_for('display_form') }}">Ekstrakcja opnii</a></li>
-      <li><a href="{{ url_for('products') }}">Produkty</a></li>
-      <li><a href="{{ url_for('author') }}">O autorze</a></li>
-    </ul>
-  </nav>
     <h2 class="mb-4">Lista produktów:</h2>
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         {% for product in products %}

@@ -6,14 +6,6 @@ Produkt {{ product.product_id }}
 <div class="container mt-4">
     <h2>{{ product.product_name }}</h2>
     <br />
-<nav>
-  <ul class="navigation">
-    <li><a href="{{ url_for('index') }}">Glówna</a></li>
-    <li><a href="{{ url_for('display_form') }}">Ekstrakcja opnii</a></li>
-    <li><a href="{{ url_for('products') }}">Produkty</a></li>
-    <li><a href="{{ url_for('author') }}">O autorze</a></li>
-  </ul>
-</nav>
     <div class="row mb-3">
         <div class="col-md-12 text-start">
             <a href="{{ url_for('download_json', product_id=product.product_id) }}"
