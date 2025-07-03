@@ -1,8 +1,9 @@
 import os
 import json
 from datetime import datetime
-from app import app
-from flask import render_template, redirect, url_for, request, send_from_directory
+from flask import Flask, render_template, redirect, url_for, request, send_from_directory
+
+app = Flask(__name__)
 
 @app.route('/')
 def index():
