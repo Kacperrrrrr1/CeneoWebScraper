@@ -21,9 +21,9 @@ def display_form():
 @app.route('/products')
 def products():
     products = []
-    for file in os.listdir("./app/data/products"):
+    for file in os.listdir("./data/products"):
         if file.endswith(".json"):
-            with open(os.path.join("./app/data/products", file), "r", encoding="utf-8") as f:
+            with open(os.path.join("./data/products", file), "r", encoding="utf-8") as f:
                 data = json.load(f)
                 products.append(data)
     return render_template("products.html", products=products)
