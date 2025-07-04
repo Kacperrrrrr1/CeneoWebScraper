@@ -1,0 +1,153 @@
+[
+    {
+        "opinion_id": "19662984",
+        "author": "dupabiskupa",
+        "recommendation": "Polecam",
+        "stars": "5/5",
+        "content": "Rewelacyjna wydajność. Przeszedłem ze starego czterordzeniowca i różnica w szybkości jest powalająca. Dość powiedzieć, że w benchmarku Cinebench R23 ten 8-rdzeniowy procesor osiąga wynik lepszy niż 16-rdzeniowy Threadripper pierwszej generacji. O wydajności jednowątkowej nie ma nawet co wspominać. No i duży cache L3 który robi ogromną różnicę w grach. Zdecydowanie polecam.",
+        "pros": [
+            "stabilność",
+            "wydajność"
+        ],
+        "cons": [],
+        "useful": "0",
+        "useless": "0",
+        "post_date": "2025-05-14 13:08:14",
+        "purchase_date": "2025-05-05 10:29:12"
+    },
+    {
+        "opinion_id": "19755526",
+        "author": "j...k",
+        "recommendation": null,
+        "stars": "3/5",
+        "content": "Procesor otrzymałem, działa. Wydajność jest ogromna. Odejmuję dwie gwiazdki za to, że po otwarciu na moim procesorze był brud, jakby po paście. Nie mam pewności czy ktoś go nie używał przede mną.",
+        "pros": [
+            "głośność pracy",
+            "stabilność",
+            "wydajność"
+        ],
+        "cons": [],
+        "useful": "0",
+        "useless": "0",
+        "post_date": "2025-07-03 08:11:24",
+        "purchase_date": "2025-06-22 11:43:05"
+    },
+    {
+        "opinion_id": "19487089",
+        "author": "d...6",
+        "recommendation": "Polecam",
+        "stars": "5/5",
+        "content": "najlepszy procesor do gier, niskie temperatury wzgledem intela (i7 14700kf)",
+        "pros": [],
+        "cons": [],
+        "useful": "0",
+        "useless": "0",
+        "post_date": "2025-03-03 14:46:12",
+        "purchase_date": "2025-02-26 19:29:16"
+    },
+    {
+        "opinion_id": "19748263",
+        "author": "k...s",
+        "recommendation": "Polecam",
+        "stars": "5/5",
+        "content": "Duży przeskok między i5 11400f, ani razu mi się komputer nie ściął",
+        "pros": [
+            "głośność pracy",
+            "stabilność",
+            "wydajność"
+        ],
+        "cons": [],
+        "useful": "0",
+        "useless": "0",
+        "post_date": "2025-06-30 08:17:19",
+        "purchase_date": "2025-06-19 10:29:38"
+    },
+    {
+        "opinion_id": "19712822",
+        "author": "j...i",
+        "recommendation": "Polecam",
+        "stars": "4,5/5",
+        "content": "Procesor jest w porządku ale mógłby być tochę lepiej zapakowany.",
+        "pros": [],
+        "cons": [],
+        "useful": "0",
+        "useless": "0",
+        "post_date": "2025-06-09 18:58:17",
+        "purchase_date": "2025-05-10 00:49:21"
+    },
+    {
+        "opinion_id": "19726865",
+        "author": "Kamil",
+        "recommendation": "Polecam",
+        "stars": "5/5",
+        "content": "Wyśmienita wydajność przy niewielkim zapotrzebowaniu na energię",
+        "pros": [
+            "głośność pracy",
+            "stabilność",
+            "wydajność"
+        ],
+        "cons": [],
+        "useful": "0",
+        "useless": "0",
+        "post_date": "2025-06-17 09:39:27",
+        "purchase_date": "2025-06-07 13:43:34"
+    },
+    {
+        "opinion_id": "19662963",
+        "author": "d...6",
+        "recommendation": "Polecam",
+        "stars": "5/5",
+        "content": "wiadomo procek topka w odpowiednim zastosowaniu - gry.",
+        "pros": [
+            "stabilność",
+            "wydajność"
+        ],
+        "cons": [],
+        "useful": "0",
+        "useless": "0",
+        "post_date": "2025-05-14 12:55:54",
+        "purchase_date": "2025-04-30 12:42:09"
+    },
+    {
+        "opinion_id": "19688559",
+        "author": "K...s",
+        "recommendation": "Polecam",
+        "stars": "5/5",
+        "content": "Najszybszy obecnie procesor na rynku. Polecam C:",
+        "pros": [],
+        "cons": [],
+        "useful": "0",
+        "useless": "0",
+        "post_date": "2025-05-27 18:41:37",
+        "purchase_date": "2025-05-03 18:45:06"
+    },
+    {
+        "opinion_id": "19699009",
+        "author": "Użytkownik Ceneo",
+        "recommendation": "Polecam",
+        "stars": "5/5",
+        "content": "Na ten moment bezkonkurencyjna opcja.",
+        "pros": [
+            "stabilność",
+            "wydajność"
+        ],
+        "cons": [],
+        "useful": "0",
+        "useless": "0",
+        "post_date": "2025-06-02 09:12:18",
+        "purchase_date": "2025-05-13 01:07:32"
+    },
+    {
+        "opinion_id": "19692843",
+        "author": "E...A",
+        "recommendation": "Polecam",
+        "stars": "5/5",
+        "content": "Product is ok, all test show expected results.",
+        "pros": [],
+        "cons": [],
+        "useful": "0",
+        "useless": "0",
+        "post_date": "2025-05-29 09:44:59",
+        "purchase_date": "2025-05-13 12:12:35"
+    }
+]

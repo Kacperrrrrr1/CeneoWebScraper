@@ -1,0 +1,26 @@
+{
+    "product_id": "181759635",
+    "product_name": "Dreame A2",
+    "opinions_count": "9",
+    "pros_count": 0,
+    "cons_count": 0,
+    "average_stars": 4.166666666666667,
+    "stars_distr": {
+        "0.0": 0,
+        "0.5": 1,
+        "1.0": 0,
+        "1.5": 0,
+        "2.0": 0,
+        "2.5": 0,
+        "3.0": 0,
+        "3.5": 0,
+        "4.0": 3,
+        "4.5": 0,
+        "5.0": 5
+    },
+    "recommendation_distr": {
+        "Nie polecam": 1,
+        "Polecam": 8,
+        "null": 0
+    }
+}

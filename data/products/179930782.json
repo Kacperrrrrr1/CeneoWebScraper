@@ -1,0 +1,26 @@
+{
+    "product_id": "179930782",
+    "product_name": "Procesor AMD Ryzen 7 9800X3D AM5 OEM",
+    "opinions_count": "18",
+    "pros_count": 6,
+    "cons_count": 0,
+    "average_stars": 4.75,
+    "stars_distr": {
+        "0.0": 0,
+        "0.5": 0,
+        "1.0": 0,
+        "1.5": 0,
+        "2.0": 0,
+        "2.5": 0,
+        "3.0": 1,
+        "3.5": 0,
+        "4.0": 0,
+        "4.5": 1,
+        "5.0": 8
+    },
+    "recommendation_distr": {
+        "Nie polecam": 0,
+        "Polecam": 9,
+        "null": 1
+    }
+}
