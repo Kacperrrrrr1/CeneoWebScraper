@@ -42,13 +42,13 @@ def parse_date(date_str):
 
 @app.route('/product/<product_id>', methods=['GET', 'POST'])
 def product(product_id):
-    product_path = os.path.join("./app/data/products", f"{product_id}.json")
+    product_path = os.path.join("./data/products", f"{product_id}.json")
     if not os.path.exists(product_path):
         return f"Produkt o ID {product_id} nie istnieje.", 404
     with open(product_path, "r", encoding="utf-8") as f:
         product_data = json.load(f)
     
-    opinions_path = os.path.join("./app/data/opinions", f"{product_id}.json")
+    opinions_path = os.path.join("./data/opinions", f"{product_id}.json")
     if os.path.exists(opinions_path):
         with open(opinions_path, "r", encoding="utf-8") as f:
             opinions_data = json.load(f)
@@ -91,7 +91,7 @@ def product(product_id):
 
 @app.route('/download_json/<product_id>')
 def download_json(product_id):
-    opinions_directory = os.path.abspath("./app/data/opinions")
+    opinions_directory = os.path.abspath("./data/opinions")
     opinion_file_name = f"{product_id}.json"
     opinion_file_path = os.path.join(opinions_directory, opinion_file_name)
     if not os.path.exists(opinion_file_path):
@@ -100,7 +100,7 @@ def download_json(product_id):
 
 @app.route('/charts/<product_id>')
 def charts(product_id):
-    product_path = os.path.join("./app/data/products", f"{product_id}.json")
+    product_path = os.path.join("./data/products", f"{product_id}.json")
     if not os.path.exists(product_path):
         return f"Produkt o ID {product_id} nie istnieje.", 404
     with open(product_path, "r", encoding="utf-8") as f:
