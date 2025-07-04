@@ -1,0 +1,26 @@
+{
+    "product_id": "181110365",
+    "product_name": "MOVA 1000",
+    "opinions_count": "1",
+    "pros_count": 0,
+    "cons_count": 0,
+    "average_stars": 5.0,
+    "stars_distr": {
+        "0.0": 0,
+        "0.5": 0,
+        "1.0": 0,
+        "1.5": 0,
+        "2.0": 0,
+        "2.5": 0,
+        "3.0": 0,
+        "3.5": 0,
+        "4.0": 0,
+        "4.5": 0,
+        "5.0": 1
+    },
+    "recommendation_distr": {
+        "Nie polecam": 0,
+        "Polecam": 1,
+        "null": 0
+    }
+}
