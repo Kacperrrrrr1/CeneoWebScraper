@@ -84,11 +84,11 @@ def extract_data():
             except TypeError:
                 url = None         
          
-    if not os.path.exists("./app/data"):
-        os.mkdir("./app/data")
-    if not os.path.exists("./app/data/opinions"):
-        os.mkdir("./app/data/opinions") 
-    with open(f"./app/data/opinions/{product_id}.json", "w", encoding="UTF-8") as jf:
+    if not os.path.exists("./data"):
+        os.mkdir("./data")
+    if not os.path.exists("./data/opinions"):
+        os.mkdir("./data/opinions") 
+    with open(f"./data/opinions/{product_id}.json", "w", encoding="UTF-8") as jf:
         json.dump(all_opinions, jf, indent=4, ensure_ascii=False)
     opinions = pd.DataFrame.from_dict(all_opinions)
     opinions.stars = opinions.stars.apply(lambda s: s.split("/")[0].replace(",",".")).astype(float)
@@ -107,9 +107,9 @@ def extract_data():
         "stars_distr": stars_distr.to_dict(),
         "recommendation_distr": recommendation_distr.to_dict()
     }
-    if not os.path.exists("./app/data/products"):
-        os.mkdir("./app/data/products") 
-    with open(f"./app/data/products/{product_id}.json", "w", encoding="UTF-8") as jf:
+    if not os.path.exists("./data/products"):
+        os.mkdir("./data/products") 
+    with open(f"./data/products/{product_id}.json", "w", encoding="UTF-8") as jf:
         json.dump(product_info, jf, indent=4, ensure_ascii=False)
     return redirect(url_for('product', product_id=product_id))
 
@@ -120,9 +120,9 @@ def display_form():
 @app.route('/products')
 def products():
     products = []
-    for file in os.listdir("./app/data/products"):
+    for file in os.listdir("./data/products"):
         if file.endswith(".json"):
-            with open(os.path.join("./app/data/products", file), "r", encoding="utf-8") as f:
+            with open(os.path.join("./data/products", file), "r", encoding="utf-8") as f:
                 data = json.load(f)
                 products.append(data)
     return render_template("products.html", products=products)
@@ -141,13 +141,13 @@ def parse_date(date_str):
 
 @app.route('/product/<product_id>', methods=['GET', 'POST'])
 def product(product_id):
-    product_path = os.path.join("./app/data/products", f"{product_id}.json")
+    product_path = os.path.join("./data/products", f"{product_id}.json")
     if not os.path.exists(product_path):
         return f"Produkt o ID {product_id} nie istnieje.", 404
     with open(product_path, "r", encoding="utf-8") as f:
         product_data = json.load(f)
     
-    opinions_path = os.path.join("./app/data/opinions", f"{product_id}.json")
+    opinions_path = os.path.join("./data/opinions", f"{product_id}.json")
     if os.path.exists(opinions_path):
         with open(opinions_path, "r", encoding="utf-8") as f:
             opinions_data = json.load(f)
@@ -190,7 +190,7 @@ def product(product_id):
 
 @app.route('/download_json/<product_id>')
 def download_json(product_id):
-    opinions_directory = os.path.abspath("./app/data/opinions")
+    opinions_directory = os.path.abspath("./data/opinions")
     opinion_file_name = f"{product_id}.json"
     opinion_file_path = os.path.join(opinions_directory, opinion_file_name)
     if not os.path.exists(opinion_file_path):
@@ -199,7 +199,7 @@ def download_json(product_id):
 
 @app.route('/charts/<product_id>')
 def charts(product_id):
-    product_path = os.path.join("./app/data/products", f"{product_id}.json")
+    product_path = os.path.join("./data/products", f"{product_id}.json")
     if not os.path.exists(product_path):
         return f"Produkt o ID {product_id} nie istnieje.", 404
     with open(product_path, "r", encoding="utf-8") as f:
